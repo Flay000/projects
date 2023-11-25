@@ -44,6 +44,8 @@ export default function Calculator() {
             setNum(oldNum - num)
         }
     }
+    /* limitar os numeros do resultado para ser ate 9
+    e aprender figma para deixa mais bonito*/
 
     return(
         <Container maxWidth="xs" className="wrapper">
