@@ -50,7 +50,9 @@ export default function Calculator() {
     return(
         <Container maxWidth="xs" className="wrapper">
         <div className="container">
-            <h1 className="result">{num}</h1 >
+            <h1 className="result">
+                {num.length > 9}preciso fazer uma validaçao para que o total de numeros mostrados nao passe de 9</h1 >
+                
             <button onClick={clear}>AC</button>
             <button onClick={changeSign}>+/-</button>
             <button onClick={porcentagem}>%</button>
@@ -63,8 +65,8 @@ export default function Calculator() {
             <button className="gray"onClick={inputNum} value={5}>5</button>
             <button className="gray"onClick={inputNum} value={6}>6</button>
             <button className="orange" value={"-"} onClick={operatorHandler}>-</button>
-            <button className="gray"onClick={inputNum} value={1}>1</button>
-            <button className="gray"onClick={inputNum} value={2}>2</button>
+            <button className="gray" onClick={inputNum} value={1}>1</button>
+            <button className="gray" onClick={inputNum} value={2}>2</button>
             <button
             className="gray"onClick={inputNum} value ={3}>3</button>
             <button className="orange" onClick={operatorHandler} value={"+"}>+</button>
